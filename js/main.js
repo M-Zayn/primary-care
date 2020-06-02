@@ -102,7 +102,7 @@ $(function() {
           },
           1400:{
               items:6,
-              margin: 30
+              margin: 20
           }
       },
       navText: ["<span class='fa fa-chevron-right'></span>","<span class='fa fa-chevron-left'></span>"]
