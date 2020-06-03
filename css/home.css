@@ -1839,10 +1839,63 @@ button {
     width: 130px;
   }
   .upper-bar {
+    position: relative;
+  }
+  .upper-bar .zx-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .upper-bar .upper-left {
+    width: unset;
+  }
+  .upper-bar .upper-left a {
+    margin: 0;
+  }
+  .upper-bar .upper-left a span {
     display: none;
   }
+  .upper-bar .upper-left a:nth-of-type(1) {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  [dir="ltr"] .upper-bar .upper-left a:nth-of-type(1) {
+    right: unset;
+    left: 10px;
+  }
+  .upper-bar .upper-left a:nth-of-type(2) {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  [dir="ltr"] .upper-bar .upper-left a:nth-of-type(2) {
+    left: unset;
+    right: 10px;
+  }
+  .upper-bar .upper-right {
+    display: none;
+  }
+  .nav-bar {
+    position: relative;
+  }
+  .nav-bar .zx-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .nav-bar .icons {
+    width: unset;
+  }
   .nav-bar .icons a {
-    font-size: 22px;
+    font-size: 18px;
   }
   .nav-bar .icons a span {
     display: none;
@@ -1859,8 +1912,38 @@ button {
   .nav-list {
     display: none;
   }
-  .nav-bar .logo-container .logo {
-    width: 80px;
+  .nav-bar .icons .menu-icon {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: 20px;
+  }
+  [dir="ltr"] .nav-bar .icons .menu-icon {
+    right: unset;
+    left: 20px;
+  }
+  .nav-bar .icons .search-icon {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: 60px;
+  }
+  [dir="ltr"] .nav-bar .icons .search-icon {
+    right: unset;
+    left: 60px;
+  }
+  .nav-bar .icons .cart-icon {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 10px;
+  }
+  [dir="ltr"] .nav-bar .icons .cart-icon {
+    left: unset;
+    right: 10px;
   }
   .nav-bar .nav-search {
     display: none;
